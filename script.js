@@ -97,7 +97,7 @@ playRound() {
              console.log(`${player1UpCard.getCardName()} beats ${player2UpCard.getCardName()} Player 1 wins the round!`);
          } else if(player2UpCard.number > player1UpCard.number){
              this.player2score++;
-             console.log(`${player2UpCard.getCardName()} beats ${player2UpCard.getCardName()} Player 2 wins the round!`);
+             console.log(`${player2UpCard.getCardName()} beats ${player1UpCard.getCardName()} Player 2 wins the round!`);
          } else {
               console.log(`${player1UpCard.getCardName()} is equal to ${player2UpCard.getCardName()} No points for either of you!`);
          }
@@ -105,6 +105,7 @@ playRound() {
      } 
         
  // Once the game has ended we need to create a "Final Score board" and declares the winner!
+
  console.log("\nGame Over!");
  console.log(`Final Score:`);
  console.log(`Player 1: ${this.player1score} points`);
